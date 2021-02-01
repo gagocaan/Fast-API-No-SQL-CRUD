@@ -1,0 +1,17 @@
+## Local ##
+.vscode
+.DS_Store
+auth
+.theia
+
+## Python ##
+__pycache__
+
+## Docs ##
+docs
+
+## Test ##
+.coverage
+coverage.xml
+.pytest_cache
+.scannerwork
