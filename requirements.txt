@@ -1,4 +1,5 @@
-fastapi     ==  0.63.0
-uvicorn     ==  0.13.3
+fastapi             ==  0.63.0
+uvicorn             ==  0.13.3
 pydantic[email]
-motor       ==  2.3.0
+motor               ==  2.3.0
+google-cloud-ndb    ==  1.7.3
