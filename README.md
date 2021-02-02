@@ -1,13 +1,13 @@
-# Ejemplo de CRUD MongoDB con Fast API
+# Ejemplo de CRUD Cloud Datastore con FastAPI
 
-## Build
+## Requirements
 
-``` bash
-docker-compose build
-```
+* Google Cloud SDK
+* Sign in Project with Datastore Enable
 
 ## Run
 
 ``` bash
-docker-compose --env-file .env up
+pip install -r requirements.txt
+python app/main.py
 ```
