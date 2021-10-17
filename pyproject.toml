@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "fast-api-no-sql-crud"
+version = "0.1.0"
+description = "Ejemplo de CRUD MongoDB con Fast API"
+authors = ["cgarzon <gagocaan@gmail.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+fastapi = {extras = ["all"], version = "^0.70.0"}
+pydantic = {extras = ["email"], version = "^1.8.2"}
+motor = "^2.5.1"
+
+[tool.poetry.dev-dependencies]
+black = "^21.9b0"
+pytest = "^6.2.5"
+ipdb = "^0.13.9"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

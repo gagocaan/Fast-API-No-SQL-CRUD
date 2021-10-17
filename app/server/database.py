@@ -49,16 +49,14 @@ async def retrieve_student(id: str) -> dict:
 # Update a student with a matching ID
 async def update_student(id: str, data: dict):
     # Return false if an empty request body is sent.
-    if len(data) < 1:
+    if not data:
         return False
     student = await student_collection.find_one({"_id": ObjectId(id)})
     if student:
         updated_student = await student_collection.update_one(
             {"_id": ObjectId(id)}, {"$set": data}
         )
-        if updated_student:
-            return True
-        return False
+        return bool(updated_student)
 
 
 # Delete a student from the database

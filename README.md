@@ -1,13 +1,33 @@
 # Ejemplo de CRUD MongoDB con Fast API
 
-## Build
+## Ejecutar
 
-``` bash
-docker-compose build
+```bash
+docker-compose --env-file .env up --build
 ```
 
-## Run
+## Limpiar
 
-``` bash
-docker-compose --env-file .env up
+```bash
+docker-compose down
+```
+
+## Estructura
+
+```bash
+.
+├── Dockerfile
+├── README.md
+├── app
+│   ├── main.py
+│   └── server
+│       ├── app.py
+│       ├── database.py
+│       ├── models
+│       │   └── student.py
+│       └── routes
+│           └── student.py
+├── docker-compose.yaml
+├── poetry.lock
+└── pyproject.toml
 ```
