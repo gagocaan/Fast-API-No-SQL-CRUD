@@ -7,7 +7,7 @@ authors = ["cgarzon <gagocaan@gmail.com>"]
 [tool.poetry.dependencies]
 python = "^3.8"
 fastapi = {extras = ["all"], version = "^0.78.0"}
-pydantic = {extras = ["email"], version = "^1.9.1"}
+pydantic = {extras = ["email"], version = "^1.10.13"}
 motor = "^3.0.0"
 ujson = "^5.4.0"
 
